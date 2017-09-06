@@ -1,0 +1,6 @@
+# Age-Calculator
+# Enter birth date as dob
+dob <-as.Date("11-Jun-1992",format="%d-%b-%Y")
+dob
+age <- difftime(Sys.Date(),dob,units="days")
+as.integer(as.numeric(age)/365)
